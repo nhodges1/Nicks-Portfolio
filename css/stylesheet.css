@@ -22,6 +22,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
+    z-index: 9999;
 }
 
 header h1 {
@@ -79,7 +80,7 @@ footer h2 {
 }
 
 section {
-    padding: 5px;
+    padding: 15px;
 }
 
 .hero {
@@ -134,8 +135,8 @@ section {
 
 .run-buddy img {
     width: 80%;
-    height: 60%;
-    display: block;
+    height: 70%;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 }
@@ -143,4 +144,43 @@ section {
 .run-buddy img:hover {
     opacity: 0.9;
     border: 4px solid #04118a;
+}
+
+.other-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.other-projects div {
+    width: 500px;
+    height: 250px;
+    margin: 20px;
+}
+
+.second-project img {
+    width: 500px;
+    height: 250px;
+    flex: 1 1 auto;
+}
+
+.second-project img:hover {
+    opacity: 0.9;
+    border: 4px solid #04118a;
+}
+
+.last-project img {
+    width: 500px;
+    height: 250px;
+    flex: 1 1 auto;
+}
+
+.last-project img:hover {
+    opacity: 0.9;
+    border: 4px solid #04118a;
+}
+
+.contact {
+    margin-top: 5px;
 }
