@@ -114,6 +114,7 @@ section {
     position: absolute;
     margin-top: 150px;
     margin-bottom: 150px;
+    flex: 1 1 100%
 }
 
 .me {
@@ -205,4 +206,117 @@ section {
     text-align: center;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero, .hero-pic {
+        width: 100%;
+    }
+
+    .hero h2 {
+        flex: 1 1 100%;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .me, .me-info {
+        flex: 0 70%;
+    }
+
+    .work {
+        flex: 1 100%;
+    }
+}
+
+/*MEDIA QUERY FOR Tablets */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .work h2 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .run-buddy, .other-projects{
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .experience{
+        flex: 100%;
+    }
+}
+
+/*MEDIA QUERY FOR MOBILE PHONES */
+@media screen and (max-width: 575px) {
+    header, .hero {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 95%;
+    }
+
+    .me, .me-info {
+        width: 100%;
+    }
+
+    .work {
+        flex: 0 100%;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .call > * {
+        flex: 0 100%;
+    }
+
+    .experience {
+        order: 3;
+    }
 }
