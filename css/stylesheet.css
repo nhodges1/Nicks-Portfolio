@@ -65,7 +65,7 @@ header nav ul li a:hover {
 }
 
 footer {
-    background: #6f7070;
+    background-image: url("../images/portfolio.jpg.jpg");
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -112,6 +112,8 @@ section {
     justify-content: flex-end;
     display: flex;
     position: absolute;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .me {
@@ -182,5 +184,20 @@ section {
 }
 
 .contact {
-    margin-top: 5px;
+    margin: 100px;
+}
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.contact ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
