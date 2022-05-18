@@ -5,169 +5,311 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nick's Portfolio</title>
         <link rel="stylesheet" href="./css/stylesheet.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation -->
         <header>
-            <h1>
-                <a href="">Nick Hodges</a>
-            </h1>
-            <nav>
-                <!--Unordered list element-->
-                <ul>
-                    <!--List item element-->
-                    <li>
-                        <!--Anchor element-->
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper black">
+                        <a href="" class="brand-logo"><span class="logo">Nick Hodges</span></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <!--Unordered list element-->
+                        <ul class="right hide-on-med-and-down">
+                            <!--List item element-->
+                            <li class="navitem">
+                                <!--Anchor element-->
+                                <a href="#about-me">About Me</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="#contact-me">Contact Me</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="#resume">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Sidenav mobile view -->
+            <ul class="sidenav" id="mobile-demo">
+                <li class="navitem">
+                    <!--Anchor element-->
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li class="navitem">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="navitem">
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li class="navitem">
+                    <a href="#resume">Resume</a>
+                </li>
+            </ul>
         </header>
         <!-- End Navigation -->
 
         <!-- Hero/Jumbotron -->
-        <section class="hero">
-            <div class="pic">
-                <img src="images/nick.jpg" alt="Pic of me" />
+        <div class="parallax-container valign-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col s6"></div>
+                    <div class="col s6 white-text z-depth-5 pulsing">
+                        <h2 class="thin-text center-align valign flow-text">Full Stack Developer</h2>
+                    </div>
+                </div>
             </div>
-            
-            <div>
-                <h2>Web Developing Prodigy</h2>
-            </div>
-        </section>
+            <div class="parallax"><img src="./images/background7.jpeg"></div>
+        </div>
+        <!-- End Hero/Jumbotron -->
 
         <section>
         </section>
-        <!-- End Hero/Jumbotron -->
 
         <!-- About Me Section -->
         <section id="about-me" class="me">
             <h2 class="section-title about">About Me</h2>
                 <div class="me-info">
                     <p>
-                        Hello, my name is Nick Hodges, and I am new to the world of Software Engineering. I have had my hands on tech for years and I finally decided to further my skills into Web Development.
-                        I have obtained my Associates degree and a Business Specialist certificate from Valencia College. I am also currently enrolled in a Coding Bootcamp with the University of Central Florida where I plan to start my Software Engineering career as a Full Stack Developer.
+                        Hello, my name is Nick Hodges, and I am Full Stack Developer with a proven ability to collaborate effectively with experienced developers while spending extra time to be mentored.
+                        I enjoy working closely with team members to ensure workloads are effectively redirected to bottlenecks and personally picking up the slack when necessary.
                     </p>
 
                     <p>
-                        Previously I worked in Customer Service for most of my career. I currently work remotely as a Call Center Representative where I work with different web applications on a computer daily. I also have work experience with Best Buy, where I worked for 5+ years which includes management experience as well. Best Buy is where I was intoduced to coding but I did not decide to get my hands on it until recently.
-                        As I am completing this bootcamp with UCF, I notice how much I enjoy coding and I look forward to the skills I will possess that would be valuabe to any employer. 
+                        With a passion for both personal growth and for software development, I attended a 1000+ hour coding bootcamp at the University of Central Florida to learn new languages while sharpening exisiting skills.
+                        I am ready to apply my passion for coding to a talented engineering team to develop quality solutions.
                     </p>
                 </div>
         </section>
         <!-- End About Me Section -->
 
+        <!-- Language Section -->
+        <div class="parallax-container hero2 valign-wrapper">
+            <div class="container">
+                <!-- Row 1 -->
+                <div class="row">
+                    <div class="col s4"></div>
+                    <div class="col s4 white-text z-depth-5 pulsing">
+                        <ul class="lang thin-text center-align valign flow-text">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="col s4"></div>
+                </div>
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="col s4 white-text z-depth-5 pulsing">
+                        <ul class="lang thin-text center-align valign flow-text">
+                            <li>React</li>
+                            <li>MySQL</li>
+                            <li>APIs</li>
+                            <li>Express.js</li>
+                        </ul>
+                    </div>
+                    <div class="col s4"></div>
+                    <div class="col s4 white-text z-depth-5 pulsing">
+                        <ul class="lang thin-text center-align valign flow-text">
+                            <li>NoSQL</li>
+                            <li>PWA</li>
+                            <li>MVC</li>
+                            <li>ORM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax"><img src="./images/background.png"></div>
+        </div>
+        <!-- End of Language section -->
+
+        <section>
+        </section>
+
         <!-- Projects Section -->
-        <section id="projects" class="work">
+        <section id="projects" class="">
             <h2 class="section-title">Projects</h2>
-                <div class="run-buddy">
-                    <a href="https://nhodges1.github.io/run-buddy/">
-                        <img src="images/run-buddy.png" alt="first project">
-                    </a>    
-                </div>
-                <div class="other-projects">
-                    <div class="second-project">
-                        <a href="https://nhodges1.github.io/Challenge-1-horiseon-nh/">
-                            <img src="images/horiseon.png" alt="second project">
-                        </a>
-                    </div>
-                    <div class="last-project">
-                        <a href="https://ru3ykat.github.io/gimme-a-drink/">
-                            <img src="./images/gimmeadrink.png" alt="drink">
-                        </a>
+            <!-- Row 1 -->
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/run-buddy.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Run Buddy</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="other-projects">
-                    <div class="second-project">
-                        <a href="https://murmuring-mesa-60919.herokuapp.com/">
-                            <img src="./images/eleven.png" alt="eleven project">
-                        </a>
-                    </div>
-                    <div class="last-project">
-                        <a href="https://morning-coast-83495.herokuapp.com/">
-                            <img src="./images/interview key.png" alt="interview">
-                        </a>
-                    </div>
-                </div>
-                <div class="other-projects">
-                    <div class="second-project">
-                        <a href="https://nhodges1.github.io/weather-dashboard/">
-                            <img src="./images/weather-dashboard.png" alt="weather project">
-                        </a>
-                    </div>
-                    <div class="last-project">
-                        <a href="https://nhodges1.github.io/work-day-scheduler/">
-                            <img src="./images/work-schedule.png" alt="scheduler">
-                        </a>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/horiseon.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Horiseon</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="other-projects">
-                    <div class="second-project">
-                        <a href="https://nhodges1.github.io/code-quiz/">
-                            <img src="./images/code-quiz.png" alt="code-quiz">
-                        </a>
-                    </div>
-                    <div class="last-project">
-                        <a href="https://nhodges1.github.io/password-generator/">
-                            <img src="./images/password-generator.png" alt="password">
-                        </a>
-                    </div>
-                </div>
-                <div class="other-projects">
-                    <div class="second-project">
-                        <a href="https://note-taker-nh.herokuapp.com/">
-                            <img src="./images/note-taker.png" alt="note-taker">
-                        </a>
-                    </div>
-                    <div class="last-project">
-                        <a href="https://nhodges1.github.io/password-generator/">
-                            <img src="./images/password-generator.png" alt="password">
-                        </a>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/gimmeadrink.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Gimme A Drink</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
                     </div>
                 </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/interview key.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Interview Key</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/eleven.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Eleven</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/code-quiz.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Code Quiz</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/weather-dashboard.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Weather Dashboard</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/note-taker.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Note Taker</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/work-schedule.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Work Day Scheduler</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/password-generator.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Password Generator</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/weather-dashboard.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Weather Dashboard</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card small z-depth-5">
+                        <div class="card-image z-depth-5">
+                        <img class="responsive-img" src="./images/note-taker.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title black-text">Note Taker</span>
+                            <a class="btn-floating waves-effect waves-light blue pulse"><i class="material-icons">pageview</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- End Projects Section -->
 
-        <!-- Contact Me Section -->
-        <section id="contact-me">
-            <h2 class="section-title">Contact Me</h2>
-                <nav class="contact">
-                    <ul class="call">
-                        <li>
-                            <a href="">813-635-6351</a>
-                        </li>
-                        <li>
-                            <a href="https://outlook.com">Hodges27@outlook.com</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/nhodges1">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/nick-hodges-ba9058177/">Linkedin</a>
-                        </li>
-                    </ul>
-                </nav>
-        </section>
-        <!-- End Contact Me Section -->
-        <section id="resume" class="experience">
-            <h2 class="section-title">Resume</h2>
-                <div>
-                    <a href="https://docs.google.com/document/d/1GYLFqYUtPdfOl2Xr_YhpOszDA24Ia9GB/edit?usp=sharing&ouid=116935672250141554576&rtpof=true&sd=true">Resume</a>
+        <!-- Footer/Contact Me Section -->
+        <footer class="page-footer black" id="contact-me">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Hope you enjoyed!</h5>
+                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                 </div>
-        </section>
-        <!-- End Contact Me Section -->
-
-        <!-- Footer -->
-        <footer>
-            <h2>Hope you enjoyed!</h2>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Contact Me</h5>
+                  <ul>
+                    <li><a class="contact-item grey-text text-lighten-3" href="#!">813-635-6351</a></li>
+                    <li><a class="contact-item grey-text text-lighten-3" href="https://outlook.com">Hodges27@outlook.com</a></li>
+                    <li><a class="contact-item grey-text text-lighten-3" href="https://github.com/nhodges1">GitHub</a></li>
+                    <li><a class="contact-item grey-text text-lighten-3" href="https://www.linkedin.com/in/nick-hodges-ba9058177/">Linkedin</a></li>
+                    <li><a class="contact-item grey-text text-lighten-3" href="https://docs.google.com/document/d/1GYLFqYUtPdfOl2Xr_YhpOszDA24Ia9GB/edit?usp=sharing&ouid=116935672250141554576&rtpof=true&sd=true">Resume</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2022 Copyright Text
+              </div>
+            </div>
         </footer>
         <!-- End Footer -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./js/portfolio.js"></script>
+    </body>
+</html>

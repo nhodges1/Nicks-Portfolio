@@ -1,3 +1,4 @@
+/* Body */
 * {
     margin: 0;
     padding: 0;
@@ -5,120 +6,89 @@
 }
 
 body {
-    color: #04118a;
+    color: white;
     font-family: Helvetica, Arial, sans-serif;
+    background: black;
 }
 
-header {
-    padding: 10px 25px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    color: black;
-    background-image: url("../images/portfolio.jpg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
+/* Navbar */
+.logo {
+    padding-left: 10px;
 }
 
-header h1 {
-    font-weight: bold;
-    font-size: 48px;
-    color: whitesmoke;
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.nav-wrapper {
+    border-bottom: solid 2px white;
 }
 
-header a {
-    text-decoration: none;
-    color: whitesmoke;
+.navitem:hover {
+    background: rgb(0, 153, 255);
 }
 
-header nav {
-    margin: 7px 0;
+/* Parallax Styling */
+.hero2 {
+    border-top: solid 2px white;
 }
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+.parallax-container {
+    border-bottom: solid 2px white;
 }
 
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.thin-text {
+    font-weight: 300;
+    background: rgba(0, 0, 14, .7);
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Hover Effect */
-header nav ul li a:hover {
-    background: #6f7070;
-    border-radius: 15px;
-    text-shadow: none;
+.lang {
+    font-size: 20px;
+}
+
+.pulsing {
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+/* Contact/Footer Styling */
+.contact-item:hover {
+    background:rgb(0, 153, 255);
 }
 
 footer {
-    background-image: url("../images/portfolio.jpg.jpg");
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    background: black;
+    border-top: 2px solid white;
 }
 
-footer h2 {
-    color: whitesmoke;
-    font-size: 30px;
-    margin: 0;
+/* Project Cards Styling */
+.card {
+    border: 3px solid white;
 }
+
+.card:hover {
+    border: 4px solid rgb(0, 153, 255);
+}
+
+/* Section styling */
 
 section {
     padding: 15px;
-}
-
-.hero {
-    background-image: url("../images/portfolio.jpg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 70px
-}
-
-.pic {
-    display: flex;
-}
-
-.pic img {
-    width: 60%;
-    height: 60%;
-    border-radius: 40%;
-    border: 1px solid #6f7070;
-}
-
-.hero h2 {
-    color: whitesmoke;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-size: 48px;
-    justify-content: flex-end;
-    display: flex;
-    position: absolute;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    flex: 1 1 100%
-}
-
-.me {
-    padding: 30px;
 }
 
 .section-title {
@@ -131,192 +101,15 @@ section {
     font-weight: bold;
 }
 
+/* About Me styling */
 .me-info p {
     padding: 10px;
     font-size: 20px;
 }
 
-.run-buddy img {
-    width: 80%;
-    height: 70%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+.me {
+    padding: 30px;
 }
 
-.run-buddy img:hover {
-    opacity: 0.9;
-    border: 4px solid #04118a;
-}
 
-.other-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
 
-.other-projects div {
-    width: 500px;
-    height: 250px;
-    margin: 20px;
-}
-
-.second-project img {
-    width: 500px;
-    height: 250px;
-    flex: 1 1 auto;
-}
-
-.second-project img:hover {
-    opacity: 0.9;
-    border: 4px solid #04118a;
-}
-
-.last-project img {
-    width: 500px;
-    height: 250px;
-    flex: 1 1 auto;
-}
-
-.last-project img:hover {
-    opacity: 0.9;
-    border: 4px solid #04118a;
-}
-
-.contact {
-    margin: 100px;
-}
-
-.contact ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-.contact ul li {
-    padding: 10px 15px;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.experience div {
-    text-align: center;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-    header {
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
-    }
-
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
-
-    header nav ul {
-        margin-top: 20px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    header nav ul li a {
-        font-size: 20px;
-    }
-
-    footer h2, footer div {
-        text-align: center;
-        width: 100%;
-    }
-
-    .hero, .hero-pic {
-        width: 100%;
-    }
-
-    .hero h2 {
-        flex: 1 1 100%;
-    }
-
-    .hero {
-        text-align: center;
-    }
-
-    .section-title {
-        width: 80%;
-    }
-
-    .me, .me-info {
-        flex: 0 70%;
-    }
-
-    .work {
-        flex: 1 100%;
-    }
-}
-
-/*MEDIA QUERY FOR Tablets */
-@media screen and (max-width: 768px) {
-    section {
-        padding: 30px 15px;
-    }
-
-    .work h2 {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .run-buddy, .other-projects{
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .contact {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .experience{
-        flex: 100%;
-    }
-}
-
-/*MEDIA QUERY FOR MOBILE PHONES */
-@media screen and (max-width: 575px) {
-    header, .hero {
-        width: 100%;
-    }
-
-    .section-title {
-        width: 95%;
-    }
-
-    .me, .me-info {
-        width: 100%;
-    }
-
-    .work {
-        flex: 0 100%;
-    }
-
-    .contact {
-        text-align: center;
-    }
-
-    .call > * {
-        flex: 0 100%;
-    }
-
-    .experience {
-        order: 3;
-    }
-}
