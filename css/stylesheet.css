@@ -25,6 +25,10 @@ body {
 }
 
 /* Parallax Styling */
+
+.fsd {
+    font-size: larger;
+}
 .hero2 {
     border-top: solid 2px white;
 }
